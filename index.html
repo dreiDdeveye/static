@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE OBSCURA — Digital Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ATMOSPHERE LAYERS -->
+  <div class="layer-newsprint"  aria-hidden="true"></div>
+  <div class="layer-halftone"   aria-hidden="true"></div>
+  <div class="layer-vignette"   aria-hidden="true"></div>
+  <div class="layer-flicker"    id="layerFlicker" aria-hidden="true"></div>
+  <div class="layer-glitch-bar" id="glitchBar"    aria-hidden="true"></div>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="rule rule--hairline"></div>
+    <div class="masthead__eyebrow">
+      <span>Vol. CLXII · No. 56,218</span>
+      <span class="orn">✦</span>
+      <span id="liveDate">—</span>
+      <span class="orn">✦</span>
+      <span>Late Edition</span>
+    </div>
+    <div class="masthead__name-row">
+      <div class="masthead__side-rule"></div>
+      <h1 class="masthead__title" data-text="The Obscura">The Obscura</h1>
+      <div class="masthead__side-rule masthead__side-rule--r"></div>
+    </div>
+    <p class="masthead__tagline"><em>"All That Is Hidden Shall Be Witnessed"</em></p>
+    <div class="rule rule--thick"></div>
+    <nav class="masthead__nav" aria-label="Sections">
+      <a href="#" class="nav-link">Archive</a><span class="nav-sep">|</span>
+      <a href="#" class="nav-link">Dispatches</a><span class="nav-sep">|</span>
+      <a href="#" class="nav-link">Anomalies</a><span class="nav-sep">|</span>
+      <a href="#" class="nav-link">Testimonies</a><span class="nav-sep">|</span>
+      <a href="#" class="nav-link">Classified</a>
+    </nav>
+    <div class="rule rule--hairline"></div>
+  </header>
+
+  <!-- FRONT PAGE -->
+  <main class="front-page">
+
+    <div class="section-flag">
+      <div class="flag-rule"></div>
+      <span class="section-label">Recovered Visual Archive</span>
+      <div class="flag-rule"></div>
+    </div>
+
+    <!-- LEAD — 2 large cards -->
+    <section class="lead-section">
+
+      <article class="card card--lead glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <!-- REPLACE /gifs/001.gif with your actual file path or URL -->
+          <img src="gifs/001.gif" alt="recovered footage 001" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 001</span>
+          <h2 class="hed">Recovered Footage — Subject Unknown</h2>
+          <p class="dek">Signal retrieved from an unregistered broadcast frequency. Origin coordinates withheld pending investigation.</p>
+        </footer>
+      </article>
+
+      <article class="card card--lead glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/002.gif" alt="anomalous transmission" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 002</span>
+          <h2 class="hed">Anomalous Transmission</h2>
+          <p class="dek">Intercepted during a routine frequency survey. No known sender. No known recipient.</p>
+        </footer>
+      </article>
+
+    </section>
+
+    <!-- SECONDARY ROW — 3 cards -->
+    <div class="rule rule--hairline"></div>
+    <section class="secondary-section">
+
+      <article class="card card--secondary glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/003.gif" alt="entity classification pending" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 003</span>
+          <h3 class="hed">Entity — Classification Pending</h3>
+          <p class="dek">Submitted anonymously. Subject unobserved since capture.</p>
+        </footer>
+      </article>
+
+      <div class="col-divider"></div>
+
+      <article class="card card--secondary glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/004.gif" alt="signal decay" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 004</span>
+          <h3 class="hed">Signal Decay</h3>
+          <p class="dek">Broadcast interrupted at the 4th second. The remaining frames are unaccounted for.</p>
+        </footer>
+      </article>
+
+      <div class="col-divider"></div>
+
+      <article class="card card--secondary glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/005.gif" alt="the last broadcast" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 005</span>
+          <h3 class="hed">The Last Broadcast</h3>
+          <p class="dek">From a decommissioned station. Personnel records: destroyed.</p>
+        </footer>
+      </article>
+
+    </section>
+
+    <!-- BROADSHEET GRID — cards 006–017 -->
+    <div class="broadsheet-flag">
+      <div class="flag-rule"></div>
+      <span class="broadsheet-label">✦ &nbsp; Further Dispatches &nbsp; ✦</span>
+      <div class="flag-rule"></div>
+    </div>
+
+    <section class="broadsheet" aria-label="Archive gallery">
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/006.gif" alt="phosphene study" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 006</span>
+          <h3 class="hed">Phosphene Study</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid card--tall glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/007.gif" alt="static remnant sector four" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 007</span>
+          <h3 class="hed">Static Remnant — Sector Four</h3>
+          <p class="dek">Timestamps precede the recording device itself.</p>
+        </footer>
+      </article>
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/008.gif" alt="memory fragment" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 008</span>
+          <h3 class="hed">Memory Fragment</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid card--wide glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/009.gif" alt="phantom signal" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 009</span>
+          <h3 class="hed">Phantom Signal</h3>
+          <p class="dek">No carrier wave detected. Transmission origin: null.</p>
+        </footer>
+      </article>
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/010.gif" alt="exposure unknown duration" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 010</span>
+          <h3 class="hed">Exposure — Unknown Duration</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/011.gif" alt="deep scan" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 011</span>
+          <h3 class="hed">Deep Scan</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid card--tall glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/012.gif" alt="breach longitude undisclosed" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 012</span>
+          <h3 class="hed">Breach — Longitude Undisclosed</h3>
+          <p class="dek">The envelope bore no return address.</p>
+        </footer>
+      </article>
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/013.gif" alt="the thirteenth" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 013</span>
+          <h3 class="hed">The Thirteenth</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid card--wide glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/014.gif" alt="lost transmission" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 014</span>
+          <h3 class="hed">Lost Transmission</h3>
+          <p class="dek">The signal returned, briefly, three weeks after the archive was sealed.</p>
+        </footer>
+      </article>
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/015.gif" alt="error cascade" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 015</span>
+          <h3 class="hed">Error Cascade</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/016.gif" alt="the watcher dusk survey" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 016</span>
+          <h3 class="hed">The Watcher — Dusk Survey</h3>
+        </footer>
+      </article>
+
+      <article class="card card--grid card--wide glitch-card" onclick="openReveal(this)">
+        <div class="card__media">
+          <img src="gifs/017.gif" alt="final frame archive terminus" />
+          <div class="card__vignette"></div>
+          <div class="glitch-slice" aria-hidden="true"></div>
+        </div>
+        <footer class="card__caption">
+          <span class="kicker">REC — 017</span>
+          <h3 class="hed">Final Frame — Archive Terminus</h3>
+          <p class="dek">The last entry in this collection. What follows is silence.</p>
+        </footer>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- COLOPHON -->
+  <footer class="colophon">
+    <div class="rule rule--thick"></div>
+    <div class="colophon__inner">
+      <span class="col-name">The Obscura</span>
+      <span class="orn">✦</span>
+      <span class="col-text"><em>Est. in Darkness</em></span>
+      <span class="orn">✦</span>
+      <span class="col-text">All Rights Withheld</span>
+    </div>
+    <div class="rule rule--hairline"></div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="overlay" id="overlay" aria-modal="true" role="dialog" aria-hidden="true" onclick="closeReveal()">
+    <div class="overlay__panel" onclick="event.stopPropagation()">
+      <button class="overlay__close" onclick="closeReveal()" aria-label="Close">✕</button>
+      <div class="overlay__media" id="overlayMedia"></div>
+      <div class="overlay__caption" id="overlayCaption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
