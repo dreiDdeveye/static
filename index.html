@@ -11,16 +11,18 @@
 </head>
 <body>
 
-  <!-- ATMOSPHERE LAYERS -->
+  <!-- ATMOSPHERE -->
   <div class="layer-newsprint"  aria-hidden="true"></div>
   <div class="layer-halftone"   aria-hidden="true"></div>
   <div class="layer-vignette"   aria-hidden="true"></div>
   <div class="layer-flicker"    id="layerFlicker" aria-hidden="true"></div>
   <div class="layer-glitch-bar" id="glitchBar"    aria-hidden="true"></div>
 
-  <!-- MASTHEAD -->
+  <!-- ═══════════════════════════════════════
+       MASTHEAD
+       ═══════════════════════════════════════ -->
   <header class="masthead">
-    <div class="rule rule--hairline"></div>
+    <div class="masthead__top-rule"></div>
     <div class="masthead__eyebrow">
       <span>Vol. CLXII · No. 56,218</span>
       <span class="orn">✦</span>
@@ -34,279 +36,560 @@
       <div class="masthead__side-rule masthead__side-rule--r"></div>
     </div>
     <p class="masthead__tagline"><em>"All That Is Hidden Shall Be Witnessed"</em></p>
-    <div class="rule rule--thick"></div>
+    <div class="masthead__thick-rule"></div>
     <nav class="masthead__nav" aria-label="Sections">
-      <a href="#" class="nav-link">Archive</a><span class="nav-sep">|</span>
-      <a href="#" class="nav-link">Dispatches</a><span class="nav-sep">|</span>
-      <a href="#" class="nav-link">Anomalies</a><span class="nav-sep">|</span>
-      <a href="#" class="nav-link">Testimonies</a><span class="nav-sep">|</span>
-      <a href="#" class="nav-link">Classified</a>
+      <a href="#archive"    class="nav-link">Archive</a><span class="nav-sep">|</span>
+      <a href="#dispatches" class="nav-link">Dispatches</a><span class="nav-sep">|</span>
+      <a href="#log"        class="nav-link">Transmission Log</a><span class="nav-sep">|</span>
+      <a href="#reports"    class="nav-link">Field Reports</a><span class="nav-sep">|</span>
+      <a href="#signal"     class="nav-link">Signal</a>
     </nav>
-    <div class="rule rule--hairline"></div>
+    <div class="masthead__hairline-rule"></div>
   </header>
 
-  <!-- FRONT PAGE -->
-  <main class="front-page">
+  <!-- ═══════════════════════════════════════
+       BROADCAST WARNING STRIP
+       ═══════════════════════════════════════ -->
+  <div class="broadcast-strip" aria-hidden="true">
+    <div class="broadcast-strip__inner">
+      <span>⚠ EMERGENCY BROADCAST</span>
+      <span class="strip-sep">—</span>
+      <span>DO NOT ADJUST YOUR SCREEN</span>
+      <span class="strip-sep">—</span>
+      <span>SIGNAL ORIGIN: UNKNOWN</span>
+      <span class="strip-sep">—</span>
+      <span>ENTITY STATUS: UNCONTAINED</span>
+      <span class="strip-sep">—</span>
+      <span>ARCHIVE ACCESS: RESTRICTED</span>
+      <span class="strip-sep">—</span>
+      <span>⚠ EMERGENCY BROADCAST</span>
+      <span class="strip-sep">—</span>
+      <span>DO NOT ADJUST YOUR SCREEN</span>
+      <span class="strip-sep">—</span>
+      <span>SIGNAL ORIGIN: UNKNOWN</span>
+      <span class="strip-sep">—</span>
+      <span>ENTITY STATUS: UNCONTAINED</span>
+      <span class="strip-sep">—</span>
+      <span>ARCHIVE ACCESS: RESTRICTED</span>
+      <span class="strip-sep">—</span>
+    </div>
+  </div>
 
-    <div class="section-flag">
-      <div class="flag-rule"></div>
-      <span class="section-label">Recovered Visual Archive</span>
-      <div class="flag-rule"></div>
+  <!-- ═══════════════════════════════════════
+       SECTION I — ARCHIVE (GIFs 001–003)
+       ═══════════════════════════════════════ -->
+  <section class="gif-section" id="archive">
+    <div class="gif-section__header">
+      <div class="section-rule"></div>
+      <div class="section-header-text">
+        <span class="section-label">Section I</span>
+        <h2 class="section-title">Primary Archive</h2>
+      </div>
+      <div class="section-rule"></div>
     </div>
 
-    <!-- LEAD — 2 large cards -->
-    <section class="lead-section">
+    <div class="gif-row">
 
-      <article class="card card--lead glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <!-- REPLACE /gifs/001.gif with your actual file path or URL -->
-          <img src="gifs/001.gif" alt="recovered footage 001" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/001.gif" alt="recovered footage 001" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 001</span>
-          <h2 class="hed">Recovered Footage — Subject Unknown</h2>
-          <p class="dek">Signal retrieved from an unregistered broadcast frequency. Origin coordinates withheld pending investigation.</p>
+          <h3 class="hed">Recovered Footage — Subject Unknown</h3>
+          <p class="dek">Signal retrieved from an unregistered broadcast frequency. Origin coordinates withheld.</p>
         </footer>
       </article>
 
-      <article class="card card--lead glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/002.gif" alt="anomalous transmission" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/002.gif" alt="anomalous transmission" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 002</span>
-          <h2 class="hed">Anomalous Transmission</h2>
-          <p class="dek">Intercepted during a routine frequency survey. No known sender. No known recipient.</p>
+          <h3 class="hed">Anomalous Transmission</h3>
+          <p class="dek">Intercepted during a routine survey. No known sender. No known recipient.</p>
         </footer>
       </article>
 
-    </section>
-
-    <!-- SECONDARY ROW — 3 cards -->
-    <div class="rule rule--hairline"></div>
-    <section class="secondary-section">
-
-      <article class="card card--secondary glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/003.gif" alt="entity classification pending" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/003.gif" alt="entity classification pending" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 003</span>
           <h3 class="hed">Entity — Classification Pending</h3>
-          <p class="dek">Submitted anonymously. Subject unobserved since capture.</p>
+          <p class="dek">Submitted anonymously. Subject unobserved since initial capture.</p>
         </footer>
       </article>
 
-      <div class="col-divider"></div>
+    </div>
+  </section>
 
-      <article class="card card--secondary glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/004.gif" alt="signal decay" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+  <!-- ═══════════════════════════════════════
+       REDACTED FIELD REPORT BLOCK
+       ═══════════════════════════════════════ -->
+  <section class="field-report" id="reports">
+    <div class="field-report__inner">
+      <div class="report-col report-col--meta">
+        <span class="report-stamp">CLASSIFIED</span>
+        <p class="report-meta">Filed: <span class="redact">██████████</span></p>
+        <p class="report-meta">Agent: <span class="redact">████ ██████</span></p>
+        <p class="report-meta">Sector: <span class="redact">███</span>-7F</p>
+        <p class="report-meta">Status: <span class="report-status">OPEN</span></p>
+      </div>
+      <div class="report-col report-col--body">
+        <h2 class="report-title">Field Report — Incident 7-Sigma</h2>
+        <p class="report-text">At <span class="redact">██:██</span> hours, monitoring station <span class="redact">███████</span> detected an unscheduled broadcast originating from coordinates that do not correspond to any known geographic location. The signal contained visual data of <span class="redact">████████████████████</span> nature. All personnel who viewed the raw feed were subsequently <span class="redact">████████████████</span>. This report has been filed in accordance with Protocol <span class="redact">██</span>.</p>
+        <p class="report-text">Recovery teams dispatched to <span class="redact">████████</span> found no structural damage but reported a persistent sensation of <span class="redact">█████████████████████████████████</span>. Cameras recovered from the site contained <span class="redact">███</span> hours of footage that predates their manufacture date by <span class="redact">██</span> years.</p>
+        <p class="report-text">Recommend immediate escalation to <span class="redact">█████████████</span>. Do not disseminate. Do not archive. <em>Do not look directly at the footage.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION II — DISPATCHES (GIFs 004–006)
+       ═══════════════════════════════════════ -->
+  <section class="gif-section" id="dispatches">
+    <div class="gif-section__header">
+      <div class="section-rule"></div>
+      <div class="section-header-text">
+        <span class="section-label">Section II</span>
+        <h2 class="section-title">Dispatches</h2>
+      </div>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="gif-row">
+
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/004.gif" alt="signal decay" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 004</span>
           <h3 class="hed">Signal Decay</h3>
-          <p class="dek">Broadcast interrupted at the 4th second. The remaining frames are unaccounted for.</p>
+          <p class="dek">Broadcast interrupted at the 4th second. Remaining frames unaccounted for.</p>
         </footer>
       </article>
 
-      <div class="col-divider"></div>
-
-      <article class="card card--secondary glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/005.gif" alt="the last broadcast" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/005.gif" alt="the last broadcast" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 005</span>
           <h3 class="hed">The Last Broadcast</h3>
           <p class="dek">From a decommissioned station. Personnel records: destroyed.</p>
         </footer>
       </article>
 
-    </section>
-
-    <!-- BROADSHEET GRID — cards 006–017 -->
-    <div class="broadsheet-flag">
-      <div class="flag-rule"></div>
-      <span class="broadsheet-label">✦ &nbsp; Further Dispatches &nbsp; ✦</span>
-      <div class="flag-rule"></div>
-    </div>
-
-    <section class="broadsheet" aria-label="Archive gallery">
-
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/006.gif" alt="phosphene study" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/006.gif" alt="phosphene study" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 006</span>
           <h3 class="hed">Phosphene Study</h3>
+          <p class="dek">Induced visual phenomena recorded without external light source.</p>
         </footer>
       </article>
 
-      <article class="card card--grid card--tall glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/007.gif" alt="static remnant sector four" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TRANSMISSION LOG
+       ═══════════════════════════════════════ -->
+  <section class="transmission-log" id="log">
+    <div class="log-header">
+      <div class="section-rule"></div>
+      <span class="section-label">Transmission Log — Automated Record</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="log-entries">
+      <div class="log-entry">
+        <span class="log-time">03:17:44</span>
+        <span class="log-channel">CH_07</span>
+        <span class="log-msg">Carrier signal detected on dead frequency. Duration: 00:00:03. Content: <span class="redact">████████</span>.</span>
+        <span class="log-status log-status--warn">FLAGGED</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">03:18:01</span>
+        <span class="log-channel">CH_07</span>
+        <span class="log-msg">Signal resumed. Visual data present. Operator <span class="redact">██████</span> unresponsive.</span>
+        <span class="log-status log-status--crit">CRITICAL</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">03:22:09</span>
+        <span class="log-channel">ALL</span>
+        <span class="log-msg">Facility-wide broadcast initiated from internal source. Origin terminal: <span class="redact">███</span>. No operator present.</span>
+        <span class="log-status log-status--crit">CRITICAL</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">03:29:58</span>
+        <span class="log-channel">CH_01</span>
+        <span class="log-msg">Cameras 4–11 offline. Last frame retained in buffer shows <span class="redact">██████████████████████████</span>.</span>
+        <span class="log-status log-status--warn">FLAGGED</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">03:41:13</span>
+        <span class="log-channel">SYS</span>
+        <span class="log-msg">Automated log system restarted. No operator input recorded. Previous 11 minutes: <span class="redact">████████████████</span>.</span>
+        <span class="log-status log-status--ok">LOGGED</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">03:41:14</span>
+        <span class="log-channel">SYS</span>
+        <span class="log-msg">This entry was written before the system restart. Timestamp discrepancy: <span class="redact">████</span> seconds.</span>
+        <span class="log-status log-status--crit">CRITICAL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION III — ANOMALIES (GIFs 007–009)
+       ═══════════════════════════════════════ -->
+  <section class="gif-section">
+    <div class="gif-section__header">
+      <div class="section-rule"></div>
+      <div class="section-header-text">
+        <span class="section-label">Section III</span>
+        <h2 class="section-title">Anomalies</h2>
+      </div>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="gif-row">
+
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/007.gif" alt="static remnant sector four" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 007</span>
           <h3 class="hed">Static Remnant — Sector Four</h3>
-          <p class="dek">Timestamps precede the recording device itself.</p>
+          <p class="dek">Timestamps appear to precede the recording device's manufacture date.</p>
         </footer>
       </article>
 
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/008.gif" alt="memory fragment" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/008.gif" alt="memory fragment" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 008</span>
           <h3 class="hed">Memory Fragment</h3>
+          <p class="dek">Origin: unknown. The sequence loops but the endpoint shifts each iteration.</p>
         </footer>
       </article>
 
-      <article class="card card--grid card--wide glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/009.gif" alt="phantom signal" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/009.gif" alt="phantom signal" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 009</span>
           <h3 class="hed">Phantom Signal</h3>
           <p class="dek">No carrier wave detected. Transmission origin: null.</p>
         </footer>
       </article>
 
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/010.gif" alt="exposure unknown duration" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION IV — TESTIMONIES (GIFs 010–012)
+       ═══════════════════════════════════════ -->
+  <section class="gif-section">
+    <div class="gif-section__header">
+      <div class="section-rule"></div>
+      <div class="section-header-text">
+        <span class="section-label">Section IV</span>
+        <h2 class="section-title">Testimonies</h2>
+      </div>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="gif-row">
+
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/010.gif" alt="exposure unknown duration" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 010</span>
           <h3 class="hed">Exposure — Unknown Duration</h3>
+          <p class="dek">The figure in the frame was not reported by the photographer.</p>
         </footer>
       </article>
 
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/011.gif" alt="deep scan" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/011.gif" alt="deep scan" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 011</span>
           <h3 class="hed">Deep Scan</h3>
+          <p class="dek">Subsurface imaging returned data inconsistent with known geography.</p>
         </footer>
       </article>
 
-      <article class="card card--grid card--tall glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/012.gif" alt="breach longitude undisclosed" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/012.gif" alt="breach longitude undisclosed" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 012</span>
           <h3 class="hed">Breach — Longitude Undisclosed</h3>
-          <p class="dek">The envelope bore no return address.</p>
+          <p class="dek">The envelope bore no return address and no postmark.</p>
         </footer>
       </article>
 
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/013.gif" alt="the thirteenth" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WITNESS ACCOUNTS
+       ═══════════════════════════════════════ -->
+  <section class="witness-section">
+    <div class="log-header">
+      <div class="section-rule"></div>
+      <span class="section-label">Witness Accounts — Unverified</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="witness-grid">
+      <blockquote class="witness-card">
+        <p>"It was not moving the way things move. It was moving the way <em>shadows</em> move — as though the light was afraid of it."</p>
+        <cite>— Deponent <span class="redact">████████</span>, recorded <span class="redact">██/██/████</span></cite>
+      </blockquote>
+      <blockquote class="witness-card">
+        <p>"The footage played backwards showed a different room. We checked the address. The building on screen burned down in <span class="redact">████</span>. Forty years before the recording."</p>
+        <cite>— Technical analyst, Station <span class="redact">███</span></cite>
+      </blockquote>
+      <blockquote class="witness-card">
+        <p>"I don't remember watching it. I only remember the moment after — standing at the window. It was dark outside. It had been afternoon when I sat down."</p>
+        <cite>— Anonymous. Postmark: <span class="redact">████████████</span></cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION V — CLASSIFIED (GIFs 013–015)
+       ═══════════════════════════════════════ -->
+  <section class="gif-section">
+    <div class="gif-section__header">
+      <div class="section-rule"></div>
+      <div class="section-header-text">
+        <span class="section-label">Section V</span>
+        <h2 class="section-title">Classified</h2>
+      </div>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="gif-row">
+
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/013.gif" alt="the thirteenth" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 013</span>
           <h3 class="hed">The Thirteenth</h3>
+          <p class="dek">Access to this file requires clearance level <span class="redact">████</span>.</p>
         </footer>
       </article>
 
-      <article class="card card--grid card--wide glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/014.gif" alt="lost transmission" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/014.gif" alt="lost transmission" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 014</span>
           <h3 class="hed">Lost Transmission</h3>
           <p class="dek">The signal returned, briefly, three weeks after the archive was sealed.</p>
         </footer>
       </article>
 
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/015.gif" alt="error cascade" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/015.gif" alt="error cascade" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 015</span>
           <h3 class="hed">Error Cascade</h3>
+          <p class="dek">System failure propagated through 14 independent nodes simultaneously.</p>
         </footer>
       </article>
 
-      <article class="card card--grid glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/016.gif" alt="the watcher dusk survey" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION VI — TERMINUS (GIFs 016–017 + filler)
+       ═══════════════════════════════════════ -->
+  <section class="gif-section" id="signal">
+    <div class="gif-section__header">
+      <div class="section-rule"></div>
+      <div class="section-header-text">
+        <span class="section-label">Section VI</span>
+        <h2 class="section-title">Terminal Records</h2>
+      </div>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="gif-row">
+
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/016.gif" alt="the watcher dusk survey" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 016</span>
           <h3 class="hed">The Watcher — Dusk Survey</h3>
+          <p class="dek">Automated camera. Decommissioned without explanation the following morning.</p>
         </footer>
       </article>
 
-      <article class="card card--grid card--wide glitch-card" onclick="openReveal(this)">
-        <div class="card__media">
-          <img src="gifs/017.gif" alt="final frame archive terminus" />
-          <div class="card__vignette"></div>
-          <div class="glitch-slice" aria-hidden="true"></div>
+      <article class="gif-card glitch-card" onclick="openReveal(this)">
+        <div class="gif-card__square">
+          <div class="gif-card__media">
+            <img src="gifs/017.gif" alt="final frame archive terminus" />
+            <div class="gif-card__vignette"></div>
+            <div class="glitch-slice" aria-hidden="true"></div>
+          </div>
         </div>
-        <footer class="card__caption">
+        <footer class="gif-card__caption">
           <span class="kicker">REC — 017</span>
           <h3 class="hed">Final Frame — Archive Terminus</h3>
           <p class="dek">The last entry in this collection. What follows is silence.</p>
         </footer>
       </article>
 
-    </section>
-  </main>
+      <!-- Sealed slot -->
+      <article class="gif-card gif-card--sealed">
+        <div class="gif-card__square">
+          <div class="gif-card__media gif-card__media--sealed">
+            <div class="sealed-inner">
+              <span class="sealed-icon">⊗</span>
+              <span class="sealed-text">RECORD SEALED</span>
+              <span class="sealed-sub">Authorisation Required</span>
+            </div>
+          </div>
+        </div>
+        <footer class="gif-card__caption">
+          <span class="kicker">REC — 018</span>
+          <h3 class="hed"><span class="redact">████████████████████</span></h3>
+        </footer>
+      </article>
 
-  <!-- COLOPHON -->
-  <footer class="colophon">
-    <div class="rule rule--thick"></div>
-    <div class="colophon__inner">
-      <span class="col-name">The Obscura</span>
-      <span class="orn">✦</span>
-      <span class="col-text"><em>Est. in Darkness</em></span>
-      <span class="orn">✦</span>
-      <span class="col-text">All Rights Withheld</span>
     </div>
-    <div class="rule rule--hairline"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SIGNAL FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-thick-rule"></div>
+    <div class="footer-body">
+      <div class="footer-col">
+        <h3 class="footer-col-title">The Obscura</h3>
+        <p class="footer-col-text"><em>Est. in Darkness</em><br/>All Rights Withheld.<br/>Reproduction without authorisation is<br/>not merely prohibited — it is unwise.</p>
+      </div>
+      <div class="footer-col footer-col--center">
+        <div class="footer-signal" aria-hidden="true">
+          <span class="signal-bar" style="--h:30%"></span>
+          <span class="signal-bar" style="--h:55%"></span>
+          <span class="signal-bar" style="--h:80%"></span>
+          <span class="signal-bar" style="--h:45%"></span>
+          <span class="signal-bar" style="--h:90%"></span>
+          <span class="signal-bar" style="--h:20%"></span>
+          <span class="signal-bar" style="--h:65%"></span>
+          <span class="signal-bar" style="--h:38%"></span>
+          <span class="signal-bar" style="--h:72%"></span>
+          <span class="signal-bar" style="--h:15%"></span>
+          <span class="signal-bar" style="--h:88%"></span>
+          <span class="signal-bar" style="--h:42%"></span>
+        </div>
+        <p class="footer-signal-label">SIGNAL ACTIVE — <span id="footerTime">--:--:--</span></p>
+      </div>
+      <div class="footer-col footer-col--right">
+        <h3 class="footer-col-title">Notices</h3>
+        <p class="footer-col-text">This archive is maintained by persons <span class="redact">████████████</span>. Materials contained herein were obtained through means that are <span class="redact">████████████████████████████</span>. Viewer exposure may result in <span class="redact">████████████████</span>.</p>
+      </div>
+    </div>
+    <div class="footer-hairline-rule"></div>
+    <div class="footer-colophon">
+      <span>Vol. CLXII · No. 56,218</span>
+      <span class="orn">✦</span>
+      <span>Late Edition</span>
+      <span class="orn">✦</span>
+      <span>End of Record</span>
+    </div>
   </footer>
 
   <!-- LIGHTBOX -->
