@@ -223,51 +223,45 @@
   </section>
 
   <!-- ═══════════════════════════════════════
-       TRANSMISSION LOG
+       LAST KNOWN WORDS — full-bleed pull quotes
        ═══════════════════════════════════════ -->
-  <section class="transmission-log" id="log">
-    <div class="log-header">
+  <section class="last-words" id="log">
+    <div class="last-words__label">
       <div class="section-rule"></div>
-      <span class="section-label">Transmission Log — Automated Record</span>
+      <span class="section-label">Last Known Transmissions — Unedited</span>
       <div class="section-rule"></div>
     </div>
-    <div class="log-entries">
-      <div class="log-entry">
-        <span class="log-time">03:17:44</span>
-        <span class="log-channel">CH_07</span>
-        <span class="log-msg">Carrier signal detected on dead frequency. Duration: 00:00:03. Content: <span class="redact">████████</span>.</span>
-        <span class="log-status log-status--warn">FLAGGED</span>
+
+    <div class="last-words__body">
+
+      <div class="lw-card lw-card--full">
+        <span class="lw-number">I.</span>
+        <blockquote class="lw-quote">
+          "Something entered the frame that was not there when we began recording. We checked every angle. There were no blind spots. There was nowhere it could have come from. There was nowhere it could have gone."
+        </blockquote>
+        <cite class="lw-cite">— Station Operator, final entry before disappearance</cite>
       </div>
-      <div class="log-entry">
-        <span class="log-time">03:18:01</span>
-        <span class="log-channel">CH_07</span>
-        <span class="log-msg">Signal resumed. Visual data present. Operator <span class="redact">██████</span> unresponsive.</span>
-        <span class="log-status log-status--crit">CRITICAL</span>
+
+      <div class="lw-divider" aria-hidden="true"></div>
+
+      <div class="lw-card lw-card--full">
+        <span class="lw-number">II.</span>
+        <blockquote class="lw-quote">
+          "The footage does not end. We have been watching it for eleven days. Every time it appears to finish, it begins again — slightly different. The room is always the same. The figure is always facing away. Except on the third viewing of each cycle. On the third viewing, it turns."
+        </blockquote>
+        <cite class="lw-cite">— Research team communiqué, dated three weeks after the facility was sealed</cite>
       </div>
-      <div class="log-entry">
-        <span class="log-time">03:22:09</span>
-        <span class="log-channel">ALL</span>
-        <span class="log-msg">Facility-wide broadcast initiated from internal source. Origin terminal: <span class="redact">███</span>. No operator present.</span>
-        <span class="log-status log-status--crit">CRITICAL</span>
+
+      <div class="lw-divider" aria-hidden="true"></div>
+
+      <div class="lw-card lw-card--full">
+        <span class="lw-number">III.</span>
+        <blockquote class="lw-quote">
+          "I have watched it more times than I can count. I no longer know which memories are mine and which belong to whatever is in the recording. I am writing this as a warning. I am writing this as a record. I do not know if I will remember writing this tomorrow."
+        </blockquote>
+        <cite class="lw-cite">— Handwritten note found on the desk. No author identified.</cite>
       </div>
-      <div class="log-entry">
-        <span class="log-time">03:29:58</span>
-        <span class="log-channel">CH_01</span>
-        <span class="log-msg">Cameras 4–11 offline. Last frame retained in buffer shows <span class="redact">██████████████████████████</span>.</span>
-        <span class="log-status log-status--warn">FLAGGED</span>
-      </div>
-      <div class="log-entry">
-        <span class="log-time">03:41:13</span>
-        <span class="log-channel">SYS</span>
-        <span class="log-msg">Automated log system restarted. No operator input recorded. Previous 11 minutes: <span class="redact">████████████████</span>.</span>
-        <span class="log-status log-status--ok">LOGGED</span>
-      </div>
-      <div class="log-entry">
-        <span class="log-time">03:41:14</span>
-        <span class="log-channel">SYS</span>
-        <span class="log-msg">This entry was written before the system restart. Timestamp discrepancy: <span class="redact">████</span> seconds.</span>
-        <span class="log-status log-status--crit">CRITICAL</span>
-      </div>
+
     </div>
   </section>
 
@@ -398,27 +392,37 @@
   </section>
 
   <!-- ═══════════════════════════════════════
-       WITNESS ACCOUNTS
+       INCIDENT BROADSIDE — large editorial block
        ═══════════════════════════════════════ -->
-  <section class="witness-section">
-    <div class="log-header">
-      <div class="section-rule"></div>
-      <span class="section-label">Witness Accounts — Unverified</span>
-      <div class="section-rule"></div>
-    </div>
-    <div class="witness-grid">
-      <blockquote class="witness-card">
-        <p>"It was not moving the way things move. It was moving the way <em>shadows</em> move — as though the light was afraid of it."</p>
-        <cite>— Deponent <span class="redact">████████</span>, recorded <span class="redact">██/██/████</span></cite>
-      </blockquote>
-      <blockquote class="witness-card">
-        <p>"The footage played backwards showed a different room. We checked the address. The building on screen burned down in <span class="redact">████</span>. Forty years before the recording."</p>
-        <cite>— Technical analyst, Station <span class="redact">███</span></cite>
-      </blockquote>
-      <blockquote class="witness-card">
-        <p>"I don't remember watching it. I only remember the moment after — standing at the window. It was dark outside. It had been afternoon when I sat down."</p>
-        <cite>— Anonymous. Postmark: <span class="redact">████████████</span></cite>
-      </blockquote>
+  <section class="broadside">
+    <div class="broadside__inner">
+      <div class="broadside__flag">
+        <div class="section-rule"></div>
+        <span class="section-label">Incident Report — Public Notice</span>
+        <div class="section-rule"></div>
+      </div>
+
+      <h2 class="broadside__headline">
+        Something Has Been<br/>
+        <em>Watching the Archive.</em>
+      </h2>
+
+      <div class="broadside__columns">
+        <div class="broadside__col">
+          <p class="broadside__body">Seventeen recordings were retrieved from the facility. Seventeen personnel were assigned to review them. As of the date of this notice, none of the seventeen have submitted their reports. None have returned calls. Three have not been seen since the assignment was issued.</p>
+          <p class="broadside__body">The recordings themselves remain intact. They have been viewed, in part, by members of the oversight committee. The committee has since voted to suspend all further review. The vote was unanimous. No explanation was provided.</p>
+        </div>
+        <div class="broadside__col">
+          <p class="broadside__body">What appears in the footage cannot be classified under any existing framework. It is not an object. It is not a person. It does not move between frames — it is simply present in some frames and absent in others, with no observable transition.</p>
+          <p class="broadside__body">The public is advised to remain calm. The public is advised not to seek out this archive. The public is advised that certain images, once seen, cannot be unseen — and that this is not a metaphor.</p>
+        </div>
+      </div>
+
+      <div class="broadside__pull">
+        <span class="broadside__ornament" aria-hidden="true">✦</span>
+        <p class="broadside__pullquote">"There is no safe distance from what is in these recordings. There is only the distance between those who have seen it and those who have not. That distance is closing."</p>
+        <span class="broadside__ornament" aria-hidden="true">✦</span>
+      </div>
     </div>
   </section>
 
